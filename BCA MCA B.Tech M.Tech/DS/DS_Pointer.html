@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>NETCODE</title>
+    <link rel="SHORTCUT ICON" href="https://static.javatpoint.com/images/favicon2.png" />
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css" />
+    <link rel="dns-prefetch" href="https://clients1.google.com">
+    <link rel="dns-prefetch" href="https://static.javatpoint.com">
+    <link rel="dns-prefetch" href="https://googleads.g.doubleclick.net">
+    <link rel="dns-prefetch" href="https://www.google.com">
+    <link rel="dns-prefetch" href="https://feedify.net">
+    <meta name="theme-color" content="#4CAF50" />
+    <meta property="og:title" content="DS Pointer - javatpoint" />
+    <meta property="og:description" content="DS Pointer with Introduction, Asymptotic Analysis, Array, Pointer, Structure, Singly Linked List, Doubly Linked List, Circular Linked List, Binary Search, Linear Search, Sorting, Bucket Sort, Comb Sort, Shell Sort, Heap Sort, Merge Sort, Selection Sort, Counting Sort, Stack, Qene, Circular Quene, Graph, Tree, B Tree, B+ Tree, Avl Tree etc."
+    />
+    <meta name="keywords" content="data structure pointer, introduction, asymptotic analysis, array, pointer, structure, singly linked list, doubly linked list, circular linked list, binary search, linear search, sorting, bucket sort, comb sort, shell sort, heap sort, merge sort, selection sort, counting sort, stack, quene, circular quene, graph, tree, b tree, b+ tree, avl tree"
+    />
+    <meta name="description" content="DS Pointer with Introduction, Asymptotic Analysis, Array, Pointer, Structure, Singly Linked List, Doubly Linked List, Circular Linked List, Binary Search, Linear Search, Sorting, Bucket Sort, Comb Sort, Shell Sort, Heap Sort, Merge Sort, Selection Sort, Counting Sort, Stack, Qene, Circular Quene, Graph, Tree, B Tree, B+ Tree, Avl Tree etc."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="canonical" href="https://www.javatpoint.com/data-structure-pointer" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta name="twitter:title" property="og:title" content="DS Pointer - javatpoint" />
+    <meta name="twitter:description" property="og:description" content="DS Pointer with Introduction, Asymptotic Analysis, Array, Pointer, Structure, Singly Linked List, Doubly Linked List, Circular Linked List, Binary Search, Linear Search, Sorting, Bucket Sort, Comb Sort, Shell Sort, Heap Sort, Merge Sort, Selection Sort, Counting Sort, Stack, Qene, Circular Quene, Graph, Tree, B Tree, B+ Tree, Avl Tree etc."
+    />
+    <meta property="og:url" content="https://www.javatpoint.com/data-structure-pointer" />
+    <meta property="og:site_name" content="www.javatpoint.com" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@pagejavatpoint" />
+    <meta name="twitter:domain" content="www.javatpoint.com" />
+    <meta name="twitter:creator" content="@pagejavatpoint" />
+
+
+<link href="https://www.javatpoint.com/manifest.json" rel="manifest">
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//delivery.adrecover.com/37784/adRecover.js?ts=1543562646174'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//cdn.adpushup.com/37780/adpushup.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+
+<style>
+    * {
+  box-sizing: border-box;
+  user-select: none;
+}
+body {
+  color:black;
+  line-height: 1.5;
+  margin:0;
+  
+}
+.info{
+  text-align: center;
+  font-size:50px;
+  
+  background-color:#e5ecee;
+  text-transform: capitalize;
+}
+.nav-header .logo {
+  width: 10%;
+}
+.nav-header nav {
+  width: 100%;
+}
+header {
+  background: #787c7d;
+  color: white;
+}
+.nav-header {
+  border-radius: 5px;
+}
+.logo {
+  text-align: center;
+  border-right: 1px;
+  padding: 12px 24px 13px;
+}
+
+.item {
+  padding: 12px 16px 13px;
+}
+.item:hover{
+	background-color:;#8f8f8f;
+}
+.item:not(:last-child) {
+  border-right: 1px solid #7e7e7e;
+}
+header,
+nav {
+  font-size: 0;
+}
+.item {
+  font-size: 24px;
+}
+.logo,
+.item,
+.middle {
+  display: inline-block;
+  vertical-align: middle;
+}
+  .scroll {
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+  .scroll::-webkit-scrollbar {
+    display: none;
+  }
+@media (max-width: 765px) {
+  .item {
+    font-size: 14px;
+  }
+}
+.con .homecontent{
+  float:left;
+     background:#dfe5ed;
+     margin:4;
+}
+element.style {
+}
+.ddsmoothmenu {
+    font-size: 13px;
+    background-color: #787c7d;
+    width: 100%;
+}
+
+div {
+    display: block;
+}
+html {
+    color: -internal-root-color;
+}
+.ddsmoothmenu ul li a {
+    display: block;
+    background-color: #787c7d;
+    color: #fff;
+    font-size: 15px;
+    padding: .9em;
+    text-decoration: none;
+}
+a {
+    color: green;
+    text-decoration: none;
+}
+.ddsmoothmenu ul li a:hover{
+  display: block;
+  background-color:#4d5354;
+}
+
+.ddsmoothmenu ul {
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+ul, ul.points {
+    list-style: circle;
+    line-height: 150%;
+}
+ul {
+    list-style-type: disc;
+}
+.ddsmoothmenu {
+    font-size: 13px;
+    background-color: #787c7d;
+    width: 100%;
+}
+
+  #link {
+        height: 46px;
+        font-weight: 700;
+        overflow: hidden
+    }
+
+element.style {
+    clear: both;
+}
+div {
+    display: block;
+}
+div ul li.cen
+{
+  float:left;
+}
+html {
+    color: -internal-root-color;
+}
+.homecontent {
+    
+    font-size: 14px;
+    padding: 15px;
+    width:  300px;
+    height: 174px;
+    border-radius: 2px 25px 2px 25px;
+    -webkit-box-shadow: -2px 10px 22px -16px rgba(0,0,0,.75);
+    -moz-box-shadow: -2px 10px 22px -16px rgba(0,0,0,.75);
+    box-shadow: 7px 10px 22px -6px rgba(0,0,0,.75);
+}
+
+#innerfooter div, #interview h2, #uh3, .homecontent, div#q h2, div.q h2 {
+    text-align: center;
+}
+user agent stylesheet
+.homecontent div {
+    display: block;
+}
+.homecontent div a {
+    color: green;
+    text-decoration: none;
+}
+user agent stylesheet
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
+.code
+{
+  max-width: 100%;
+  height:auto;
+}
+#city td {
+    color: #000;
+    line-height: 23px;
+    margin-left: 20px;
+}
+#city td, #city ul {
+    font: 13px verdana,helvetica,arial,sans-serif;
+}
+user agent stylesheet
+table {
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+/*button next & previes */
+#bottomnextup a {
+    font: 13px/1.5 times new roman;
+    background-color: #787c7d;
+    float: right;
+    margin-top:5px;
+    padding: 6px 25px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 7px;
+}
+#bottomnextup a:hover{
+    display: block;
+    background-color:#4d5354;   
+}
+.Content_Only
+{
+    background-color:#e5ecee;
+    margin-left: inherit;
+    margin-right: inherit;
+}
+
+@media screen and (min-width: 700px){
+.Content_Only {
+    margin-left:200px;
+    margin-right: 100px;
+}
+
+textarea {
+  border:1px solid #ddd;
+ width: 100%; 
+ height: 150px; 
+
+}
+}
+.codeblock {
+    width: 100%;
+    margin-bottom: 8px;
+    font-family: verdana;
+    padding-left: 0;
+    border-left: 4px solid #8e9eac;
+    -moz-box-shadow: 6px 3px 8px #d4d4d4;
+    -webkit-box-shadow: 6px 3px 8px #d4d4d4;
+    box-shadow: 6px 3px 8px #d4d4d4;
+}
+
+.dp-highlighter {
+    width: auto;
+    overflow: hidden;
+    margin: 8px 0!important;
+    padding-top: 0;
+}
+
+.h3 {
+    font-size: 21px;
+}
+.h3, .h4 {
+    font-family: erdana,helvetica,arial,sans-serif;
+    color: #610B4B;
+}
+.h1, .h3 {
+    font-weight: 400;
+}
+h1, h2, h3 {
+    line-height: 1.3em;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+img
+{
+  max-width:100%;
+  height:auto;
+}
+
+.alt td, .alt th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+textarea {
+  border:1px solid #ddd;
+ width: 90%; 
+ height: 150px; 
+
+}
+
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.Content_Only{
+  padding-top: 60px;
+}
+
+@media screen and (max-width: 385px) and (min-width: 360px)
+.codeblock3, .dp-highlighter, .codeblock {
+    width: 340px;
+    overflow: auto;
+    font-size: 14px;
+}
+.dp-highlighter {
+    width: auto;
+    overflow: hidden;
+    margin: 8px 0!important;
+    padding-top: 0;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+@media screen and (max-width: 385px) and (min-width: 360px)
+.codeblock {
+    font-family: verdana;
+    padding-left: 0;
+    border: 1px solid #d5ddc6;
+    border-left: 4px solid #6b5;
+    -moz-box-shadow: 0 0 0 #d4d4d4;
+    -webkit-box-shadow: 0 0 0 #d4d4d4;
+    box-shadow: 0 0 0 #d4d4d4;
+}
+.codeblock {
+    width: 100%;
+    margin-bottom: 8px;
+    font-family: verdana;
+    padding-left: 0;
+    border-left: 4px solid #6b5;
+    -moz-box-shadow: 6px 3px 8px #d4d4d4;
+    -webkit-box-shadow: 6px 3px 8px #d4d4d4;
+    box-shadow: 6px 3px 8px #d4d4d4;
+}
+@media screen and (max-width: 385px) and (min-width: 360px)
+#city td {
+    font: 16px verdana,helvetica,arial,sans-serif;
+    line-height: 29px;
+}
+#city td {
+    color: #000;
+    line-height: 23px;
+    margin-left: 20px;
+}
+#city td, #city ul {
+    font: 13px verdana,helvetica,arial,sans-serif;
+}
+user agent stylesheet
+table {
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+#city {
+    font: 13px/1.5 Verdana,Arial,Sans-Serif;
+    color: #000;
+    margin-left: 0;
+}
+user agent stylesheet
+html {
+    color: -internal-root-color;
+}
+.dp-highlighter::-webkit-scrollbar {
+    height: 0px;
+}
+.dp-highlighter::-webkit-scrollbar-thumb {
+    background: #f1f1f1;
+}
+.dp-highlighter::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+</style>
+
+</head>
+<body>
+
+            <div style="float:left;width:60%;">
+<script>
+  (function() {
+    var cx = '005383125436438536544:y1edweedxwi';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<div class="container" >
+    <div class="info">NETCODE</div>
+  <header class="nav-header">
+    <nav class="middle scroll">
+    	<span class="item" style="padding: 11px 24px 13px;background-color:black;">NETCODE</span>
+    
+      <span class="item" style="">Home</span>
+      <span class="item">About</span>
+      <span class="item">Portfolio</span>
+      <span class="item">Pricing</span>
+      <span class="item">Services</span>
+      <span class="item">Contact</span>
+      <span class="item">Blog</span>
+      <span class="item">Help</span>
+
+        <span class="item">About</span>
+      <span class="item">Portfolio</span>
+      <span class="item">Pricing</span>
+      <span class="item">Services</span>
+      <span class="item">About</span>
+      <span class="item">Portfolio</span>
+      <span class="item">Pricing</span>
+      <span class="item">Services</span>
+    
+    </nav>
+  </header>
+</div>
+  <script>
+
+  </script>
+<div class="Content_Only">
+    <table>
+<tr><td>
+
+<div id="bottomnextup">
+<a class="next" href="dbms-er-model-concept">next &rarr;</a>
+<a class="next" href="dbms-data-independence">&larr; prev</a>
+</div>
+
+<h1 class="h1">Pointer</h1>
+<p>Pointer is used to points the address of the value stored anywhere in the computer memory. To obtain the value stored at the location is known as dereferencing the pointer. Pointer improves the performance for repetitive process such as: </p>
+<ul class="points">
+<li>Traversing String</li>
+<li>Lookup Tables</li>
+<li>Control Tables</li>
+<li>Tree Structures</li>
+</ul>
+<img src="https://static.javatpoint.com/ds/images/data-structure-pointer-performance1.jpg" style="width:550px" alt="DS Pointer Performance"/>
+
+<h2 class="h2">Pointer Details</h2>
+<ul class="points">
+<li><strong>Pointer arithmetic:</strong> There are four arithmetic operators that can be used in pointers: ++, --, +, -</li>
+<li><strong>Array of pointers:</strong> You can define arrays to hold a number of pointers.</li>
+<li><strong>Pointer to pointer:</strong> C allows you to have pointer on a pointer and so on.</li>
+<li><strong>Passing pointers to functions in C:</strong> Passing an argument by reference or by address enable the passed argument to be changed in the calling function by the called function.</li>
+<li><strong>Return pointer from functions in C:</strong> C allows a function to return a pointer to the local variable, static variable and dynamically allocated memory as well.</li>
+</ul>
+<img src="https://static.javatpoint.com/ds/images/pointer.png" style="width:550px" alt="DS Pointer"/>
+<h3 class="h3">Program</h3>
+<h4 class="h4">Pointer</h4>
+<div class="codeblock">
+  <div class="dp-highlighter"><div class="bar"><div class="tools"><a href="#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;"></a><a href="#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;"></a><a href="#" onclick="dp.sh.Toolbar.Command('About',this);return false;"></a></div></div><ol start="1" class="dp-j"><li class="alt"><span><span>#include&nbsp;&lt;stdio.h&gt;&nbsp;&nbsp;</span></span></li><li class=""><span><span class="keyword">void</span><span>&nbsp;main&nbsp;()&nbsp;&nbsp;</span></span></li><li class="alt"><span>{&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">int</span><span>&nbsp;marks_1&nbsp;=&nbsp;</span><span class="number">56</span><span>,&nbsp;marks_2&nbsp;=&nbsp;</span><span class="number">78</span><span>,&nbsp;marks_3&nbsp;=&nbsp;</span><span class="number">88</span><span>,&nbsp;marks_4&nbsp;=&nbsp;</span><span class="number">76</span><span>,&nbsp;marks_5&nbsp;=&nbsp;</span><span class="number">56</span><span>,&nbsp;marks_6&nbsp;=&nbsp;</span><span class="number">89</span><span>;&nbsp;&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">float</span><span>&nbsp;avg&nbsp;=&nbsp;(marks_1&nbsp;+&nbsp;marks_2&nbsp;+&nbsp;marks_3&nbsp;+&nbsp;marks_4&nbsp;+&nbsp;marks_5&nbsp;+marks_6)&nbsp;/&nbsp;</span><span class="number">6</span><span>&nbsp;;&nbsp;&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;printf(avg);&nbsp;&nbsp;&nbsp;</span></li><li class="alt"><span>}&nbsp;&nbsp;</span></li></ol></div>
+  <textarea name="code" class="java" style="display:none;">
+#include &lt;stdio.h&gt;
+
+int main( )
+{
+int a = 5;
+int *b;
+b = &a;
+
+printf ("value of a = %d\n", a);
+printf ("value of a = %d\n", *(&a));
+printf ("value of a = %d\n", *b);
+printf ("address of a = %u\n", &a);
+printf ("address of a = %d\n", b);
+printf ("address of b = %u\n", &b);
+printf ("value of b = address of a = %u", b);
+return 0;
+}
+</textarea></div>
+<h4 class="h4">Output</h4>
+<div class="codeblock"><textarea name="code" class="java">
+value of a = 5                                                                                                                 
+value of a = 5                                                                                                                 
+address of a = 3010494292                                                                                                      
+address of a = -1284473004                                                                                                     
+address of b = 3010494296                                                                                                      
+value of b = address of a = 3010494292
+</textarea></div>
+<h3 class="h3">Program</h3>
+<h4 class="h4">Pointer to Pointer</h4>
+<div class="codeblock"><textarea name="code" class="java">
+#include &lt;stdio.h&gt;
+
+int main( )
+{
+int a = 5;
+int *b;
+int **c;
+b = &a;
+c = &b;
+printf ("value of a = %d\n", a);
+printf ("value of a = %d\n", *(&a));
+printf ("value of a = %d\n", *b);
+printf ("value of a = %d\n", **c);
+printf ("value of b = address of a = %u\n", b);
+printf ("value of c = address of b = %u\n", c);
+printf ("address of a = %u\n", &a);
+printf ("address of a = %u\n", b);
+printf ("address of a = %u\n", *c);
+printf ("address of b = %u\n", &b);
+printf ("address of b = %u\n", c);
+printf ("address of c = %u\n", &c);
+return 0;
+}
+</textarea></div>
+<br>
+<h4 class="h4">Pointer to Pointer</h4>
+<div class="codeblock"><textarea name="code" class="java">
+value of a = 5                                                                                                                 
+value of a = 5                                                                                                                 
+value of a = 5                                                                                                                 
+value of a = 5                                                                                                                 
+value of b = address of a = 2831685116                                                                                         
+value of c = address of b = 2831685120
+address of a = 2831685116                                                                                                      
+address of a = 2831685116                                                                                                      
+address of a = 2831685116                                                                                                      
+address of b = 2831685120                                                                                                      
+address of b = 2831685120                                                                                                      
+address of c = 2831685128   
+</textarea></div> 
+<div class="nexttopicdiv">
+<span class="nexttopictext">Next Topic</span><span class="nexttopiclink"><a href="data-structure-structure">DS Structure</a></span>
+</div>
+<!-- link -->
+<br/><br/>
+
+
+<div id="bottomnextup">
+<a class="next" href="dbms-er-model-concept">next &rarr;</a>
+<a class="next" href="dbms-data-independence">&larr; prev</a>
+</div>
+
+
+<br/><br/>
+</td></tr>
+</table>
+    </div>
+
+</body>
+
+</html> 

@@ -1,0 +1,718 @@
+<html>
+<head>
+<title>NETCODE</title>
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="jquery-3.4.1.min.js"></script>
+
+<style>
+    * {
+  box-sizing: border-box;
+  user-select: none;
+}
+body {
+  color:black;
+  line-height: 1.5;
+  margin:0;
+  
+}
+.info{
+  text-align: center;
+  font-size:50px;
+  
+  background-color:#e5ecee;
+  text-transform: capitalize;
+}
+.nav-header .logo {
+  width: 10%;
+}
+.nav-header nav {
+  width: 100%;
+}
+header {
+  background: #787c7d;
+  color: white;
+}
+.nav-header {
+  border-radius: 5px;
+}
+.logo {
+  text-align: center;
+  border-right: 1px;
+  padding: 12px 24px 13px;
+}
+
+.item {
+  padding: 12px 16px 13px;
+}
+.item:hover{
+	background-color:red;
+}
+.item:not(:last-child) {
+  border-right: 1px solid #7e7e7e;
+}
+header,
+nav {
+  font-size: 0;
+}
+.item {
+  font-size: 24px;
+}
+.logo,
+.item,
+.middle {
+  display: inline-block;
+  vertical-align: middle;
+}
+  .scroll {
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+  .scroll::-webkit-scrollbar {
+    display: none;
+  }
+@media (max-width: 650px) {
+  .item {
+    font-size: 14px;
+  }
+}
+.con .homecontent{
+  float:left;
+     background:#dfe5ed;
+     margin:4;
+}
+element.style {
+}
+.ddsmoothmenu {
+    font-size: 13px;
+    background-color: #787c7d;
+    width: 100%;
+}
+
+div {
+    display: block;
+}
+html {
+    color: -internal-root-color;
+}
+.ddsmoothmenu ul li a {
+    display: block;
+    background-color: #787c7d;
+    color: #fff;
+    font-size: 15px;
+    padding: .9em;
+    text-decoration: none;
+}
+a {
+    color: green;
+    text-decoration: none;
+}
+.ddsmoothmenu ul li a:hover{
+  display: block;
+  background-color:#4d5354;
+}
+
+.ddsmoothmenu ul {
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+ul, ul.points {
+    list-style: circle;
+    line-height: 150%;
+}
+ul {
+    list-style-type: disc;
+}
+.ddsmoothmenu {
+    font-size: 13px;
+    background-color: #787c7d;
+    width: 100%;
+}
+
+  #link {
+        height: 46px;
+        font-weight: 700;
+        overflow: hidden
+    }
+
+element.style {
+    clear: both;
+}
+div {
+    display: block;
+}
+div ul li.cen
+{
+  float:left;
+}
+html {
+    color: -internal-root-color;
+}
+.homecontent {
+    
+    font-size: 14px;
+    padding: 15px;
+    width:  300px;
+    height: 174px;
+    border-radius: 2px 25px 2px 25px;
+    -webkit-box-shadow: -2px 10px 22px -16px rgba(0,0,0,.75);
+    -moz-box-shadow: -2px 10px 22px -16px rgba(0,0,0,.75);
+    box-shadow: 7px 10px 22px -6px rgba(0,0,0,.75);
+}
+
+#innerfooter div, #interview h2, #uh3, .homecontent, div#q h2, div.q h2 {
+    text-align: center;
+}
+user agent stylesheet
+.homecontent div {
+    display: block;
+}
+.homecontent div a {
+    color: green;
+    text-decoration: none;
+}
+user agent stylesheet
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
+.code
+{
+  max-width: 100%;
+  height:auto;
+}
+#city td {
+    color: #000;
+    line-height: 23px;
+    margin-left: 20px;
+}
+#city td, #city ul {
+    font: 13px verdana,helvetica,arial,sans-serif;
+}
+user agent stylesheet
+table {
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+/*button next & previes */
+#bottomnextup a {
+    font: 13px/1.5 times new roman;
+    background-color: #787c7d;
+    float: right;
+    margin-top:5px;
+    padding: 6px 25px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 7px;
+}
+#bottomnextup a:hover{
+    display: block;
+    background-color:#4d5354;   
+}
+.Content_Only
+{
+    background-color:#e5ecee;
+    margin-left: inherit;
+    margin-right: inherit;
+}
+
+@media screen and (min-width: 650px){
+.Content_Only {
+    margin-left:200px;
+    margin-right: 100px;
+}
+
+textarea {
+  border:1px solid #ddd;
+ width: 100%; 
+ height: 150px; 
+
+}
+}
+.codeblock {
+    width: 100%;
+    margin-bottom: 8px;
+    font-family: verdana;
+    padding-left: 0;
+
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+    border-left: 4px solid #8e9eac;
+    -moz-box-shadow: 6px 3px 8px #d4d4d4;
+    -webkit-box-shadow: 6px 3px 8px #d4d4d4;
+    box-shadow: 6px 3px 8px #d4d4d4;
+
+}
+ol{
+	background-color:white;
+}
+.dp-highlighter {
+    width: auto;
+    overflow: hidden;
+    margin: 8px 0!important;
+    padding-top: 0;
+}
+
+.h3 {
+    font-size: 21px;
+}
+.h3, .h4 {
+    font-family: erdana,helvetica,arial,sans-serif;
+    color: #610B4B;
+}
+.h1, .h3 {
+    font-weight: 400;
+}
+h1, h2, h3 {
+    line-height: 1.3em;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+img
+{
+  max-width:100%;
+  height:auto;
+}
+
+.alt td, .alt th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+textarea {
+  border:1px solid #ddd;
+ width: 90%; 
+ height: 150px; 
+
+}
+
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.Content_Only{
+  padding-top: 60px;
+}
+
+</style>
+
+</head>
+<body>
+<div class="container" >
+    <div class="info">NETCODE</div>
+  <header class="nav-header">
+    <nav class="middle scroll">
+    	<span class="item" style="padding: 11px 24px 13px;background-color:black;">NETCODE</span>
+    
+      <span class="item" style="">Home</span>
+      <span class="item">About</span>
+      <span class="item">Portfolio</span>
+      <span class="item">Pricing</span>
+      <span class="item">Services</span>
+      <span class="item">Contact</span>
+      <span class="item">Blog</span>
+      <span class="item">Help</span>
+
+        <span class="item">About</span>
+      <span class="item">Portfolio</span>
+      <span class="item">Pricing</span>
+      <span class="item">Services</span>
+      <span class="item">About</span>
+      <span class="item">Portfolio</span>
+      <span class="item">Pricing</span>
+      <span class="item">Services</span>
+    
+    </nav>
+  </header>
+</div>
+  <script>
+
+  </script>
+<div class="Content_Only">
+    <table>
+<tr><td>
+
+<div id="bottomnextup">
+<a class="next" href="dbms-er-model-concept">next &rarr;</a>
+<a class="next" href="dbms-data-independence">&larr; prev</a>
+</div>
+
+x
+<h1 class="h1">SQL JOIN</h1>
+<p>As the name shows, JOIN means to combine something. In case of SQL, JOIN means "to combine two or more tables".</p>
+<p>In SQL, JOIN clause is used to combine the records from two or more tables in a database. </p>
+<h2 class="h2">Types of SQL JOIN</h2>
+<ol class="points">
+<li>INNER JOIN</li>
+<li>LEFT JOIN</li>
+<li>RIGHT JOIN</li>
+<li>FULL JOIN</li>
+</ol>
+<h3 class="h3">Sample Table</h3>
+<p class="center"><strong>EMPLOYEE</strong></p>
+<table class="alt">
+<tr>
+    <th>EMP_ID</th>
+    <th>EMP_NAME</th>
+    <th>CITY</th>
+    <th>SALARY </th>
+    <th>AGE</th>
+</tr>
+<tr>
+    <td>1</td>
+    <td>Angelina</td>
+    <td>Chicago</td>
+    <td>200000</td>
+    <td>30</td>
+</tr>
+<tr>
+    <td>2</td>
+    <td>Robert</td>
+    <td>Austin</td>
+    <td>300000</td>
+    <td>26</td>
+</tr>
+<tr>
+    <td>3</td>
+    <td>Christian</td>
+    <td>Denver</td>
+    <td>100000</td>
+    <td>42</td>
+</tr>
+<tr>
+    <td>4</td>
+    <td>Kristen</td>
+    <td>Washington</td>
+    <td>500000</td>
+    <td>29</td>
+</tr>
+<tr>
+    <td>5</td>
+    <td>Russell</td>
+    <td>Los angels</td>
+    <td>200000</td>
+    <td>36</td>
+</tr>
+<tr>
+    <td>6</td>
+    <td>Marry</td>
+    <td>Canada</td>
+    <td>600000</td>
+    <td>48</td>
+</tr>
+</table>
+<p class="center"><strong>PROJECT</strong></p>
+<table class="alt">
+<tr>
+    <th>PROJECT_NO</th>
+    <th>EMP_ID</th>
+    <th>DEPARTMENT</th>
+</tr>
+<tr>
+    <td>101</td>
+    <td>1</td>
+    <td>Testing</td>00
+</tr>
+<tr>
+    <td>102</td>
+    <td>2</td>
+    <td>Development</td>
+</tr>
+<tr>
+    <td>103</td>
+    <td>3</td>
+    <td>Designing</td>
+</tr>
+<tr>
+    <td>104</td>
+    <td>4</td>
+    <td>Development</td>
+</tr>
+</table>
+<h3 class="h3">1. INNER JOIN</h3>
+<p>In SQL, INNER JOIN selects records that have matching values in both tables as long as the condition is satisfied. It returns the combination of all rows from both the tables where the condition satisfies.  </p>
+<p><strong>Syntax</strong></p>
+<pre>
+<div class="codeblock"><textarea name="code" class="html">
+SELECT table1.column1, table1.column2, table2.column1,....
+FROM table1 
+INNER JOIN table2
+ON table1.matching_column = table2.matching_column;
+<script>
+
+</script>
+
+</textarea></div></pre>
+<p><strong>Query</strong></p>
+<div class="codeblock"><textarea name="code" class="html">
+SELECT EMPLOYEE.EMP_NAME, PROJECT.DEPARTMENT 
+FROM EMPLOYEE
+INNER JOIN PROJECT
+ON PROJECT.EMP_ID = EMPLOYEE.EMP_ID;
+</textarea></div>
+<p><Strong>Output</strong></p>
+<table class="alt">
+<tr>
+    <th>EMP_NAME</th>
+    <th>DEPARTMENT</th>
+</tr>
+<tr>
+    <td>Angelina </td>
+    <td>Testing</td>
+</tr>
+<tr>
+    <td>Robert</td>
+    <td>Development</td>
+</tr>
+<tr>
+    <td>Christian</td>
+    <td>Designing</td>
+</tr>
+<tr>
+    <td>Kristen</td>
+    <td>Development</td>
+</tr>
+</table>
+<h3 class="h3">2. LEFT JOIN</h3>
+<p>The SQL left join returns all the values from left table and the matching values from the right table. If there is no matching join value, it will return NULL. </p>
+<p><strong>Syntax</strong></p>
+<div class="codeblock"><textarea name="code" class="html">
+SELECT table1.column1, table1.column2, table2.column1,....
+FROM table1 
+LEFT JOIN table2
+ON table1.matching_column = table2.matching_column;
+</textarea></div>
+<p><strong>Query</strong></p>
+<div class="codeblock"><textarea name="code" class="html">
+SELECT EMPLOYEE.EMP_NAME, PROJECT.DEPARTMENT 
+FROM EMPLOYEE
+LEFT JOIN PROJECT
+ON PROJECT.EMP_ID = EMPLOYEE.EMP_ID;
+</textarea></div>
+<p><Strong>Output</strong></p>
+<table class="alt">
+<tr>
+    <th>EMP_NAME</th>
+    <th>DEPARTMENT</th>
+</tr>
+<tr>
+    <td>Angelina </td>
+    <td>Testing</td>
+</tr>
+<tr>
+    <td>Robert</td>
+    <td>Development</td>
+</tr>
+<tr>
+    <td>Christian</td>
+    <td>Designing</td>
+</tr>
+<tr>
+    <td>Kristen</td>
+    <td>Development</td>
+</tr>
+<tr>
+    <td>Russell</td>
+    <td>NULL</td>
+</tr>
+<tr>
+    <td>Marry</td>
+    <td>NULL</td>
+</tr>
+</table>
+<h3 class="h3">3. RIGHT JOIN</h3>
+<p>In SQL, RIGHT JOIN returns all the values from the values from the rows of right table and the matched values from the left table. If there is no matching in both tables, it will return NULL.</p>
+<p><strong>Syntax</strong></p>
+<div class="codeblock"><textarea name="code" class="html">
+SELECT table1.column1, table1.column2, table2.column1,....
+FROM table1 
+RIGHT JOIN table2
+ON table1.matching_column = table2.matching_column;
+</textarea></div>
+<p><strong>Query</strong></p>
+<div class="codeblock"><textarea name="code" class="html">
+SELECT EMPLOYEE.EMP_NAME, PROJECT.DEPARTMENT 
+FROM EMPLOYEE
+RIGHT JOIN PROJECT
+ON PROJECT.EMP_ID = EMPLOYEE.EMP_ID;
+</textarea></div>
+<p><Strong>Output</strong></p>
+<table class="alt">
+<tr>
+    <th>EMP_NAME</th>
+    <th>DEPARTMENT</th>
+</tr>
+<tr>
+    <td>Angelina </td>
+    <td>Testing</td>
+</tr>
+<tr>
+    <td>Robert</td>
+    <td>Development</td>
+</tr>
+<tr>
+    <td>Christian</td>
+    <td>Designing</td>
+</tr>
+<tr>
+    <td>Kristen</td>
+    <td>Development</td>
+</tr>
+</table>
+<h3 class="h3">4. FULL JOIN</h3>
+<p>In SQL, FULL JOIN is the result of a combination of both left and right outer join. Join tables have all the records from both tables. It puts NULL on the place of matches not found.</p>
+<p><strong>Syntax</strong></p>
+<div class="codeblock"><textarea name="code" class="html" col="20" row="">
+SELECT table1.column1, table1.column2, table2.column1,....
+FROM table1 
+FULL JOIN table2
+ON table1.matching_column = table2.matching_column;
+</textarea></div>
+<p><strong>Query</strong></p>
+<div class="codeblock"><textarea name="code" class="html">
+SELECT EMPLOYEE.EMP_NAME, PROJECT.DEPARTMENT 
+FROM EMPLOYEE
+FULL JOIN PROJECT 
+ON PROJECT.EMP_ID = EMPLOYEE.EMP_ID;
+</textarea></div>
+<p><Strong>Output</strong></p>
+<table class="alt">
+<tr>
+    <th>EMP_NAME</th>
+    <th>DEPARTMENT</th>
+</tr>
+<tr>
+    <td>Angelina </td>
+    <td>Testing</td>
+</tr>
+<tr>
+    <td>Robert</td>
+    <td>Development</td>
+</tr>
+<tr>
+    <td>Christian</td>
+    <td>Designing</td>
+</tr>
+<tr>
+    <td>Kristen</td>
+    <td>Development</td>
+</tr>
+<tr>
+    <td>Russell</td>
+    <td>NULL</td>
+</tr>
+<tr>
+    <td>Marry</td>
+    <td>NULL</td>
+</tr>
+</table>
+
+<br>
+<div class="nexttopicdiv">
+<span class="nexttopictext">Next Topic</span><span class="nexttopiclink"><a href="dbms-sql-set-operation">DBMS SQL Set Operation</a></span>
+</div>
+<!-- link -->
+<br/><br/>
+
+<div class="codeblock"><div><div class="bar"><div class="tools"><a href="#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;"></a><a href="#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;"></a><a href="#" onclick="dp.sh.Toolbar.Command('About',this);return false;"></a></div></div><ol start="1" class="dp-cpp"><li class="alt"><span><span class="preprocessor">#include&nbsp;&lt;stdio.h&gt;</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span><span class="preprocessor">#include&nbsp;&lt;stdlib.h&gt;</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span><span class="comment">//Represent&nbsp;a&nbsp;node&nbsp;of&nbsp;singly&nbsp;linked&nbsp;list</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span><span class="keyword">struct</span><span>&nbsp;node{&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="datatypes">int</span><span>&nbsp;data;&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">struct</span><span>&nbsp;node&nbsp;*next;&nbsp;&nbsp;</span></span></li><li class="alt"><span>};&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;</span></li><li class="alt"><span><span class="comment">//Represent&nbsp;the&nbsp;head&nbsp;and&nbsp;tail&nbsp;of&nbsp;the&nbsp;singly&nbsp;linked&nbsp;list</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span><span class="keyword">struct</span><span>&nbsp;node&nbsp;*head,&nbsp;*tail&nbsp;=&nbsp;NULL;&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;</span></li><li class=""><span><span class="comment">//addNode()&nbsp;will&nbsp;add&nbsp;a&nbsp;new&nbsp;node&nbsp;to&nbsp;the&nbsp;list</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span><span class="keyword">void</span><span>&nbsp;addNode(</span><span class="datatypes">int</span><span>&nbsp;data)&nbsp;{&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//Create&nbsp;a&nbsp;new&nbsp;node</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">struct</span><span>&nbsp;node&nbsp;*newNode&nbsp;=&nbsp;(</span><span class="keyword">struct</span><span>&nbsp;node*)malloc(</span><span class="keyword">sizeof</span><span>(</span><span class="keyword">struct</span><span>&nbsp;node));&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;newNode-&gt;data&nbsp;=&nbsp;data;&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;newNode-&gt;next&nbsp;=&nbsp;NULL;&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//Checks&nbsp;if&nbsp;the&nbsp;list&nbsp;is&nbsp;empty</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span><span>(head&nbsp;==&nbsp;NULL)&nbsp;{&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//If&nbsp;list&nbsp;is&nbsp;empty,&nbsp;both&nbsp;head&nbsp;and&nbsp;tail&nbsp;will&nbsp;point&nbsp;to&nbsp;new&nbsp;node</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;head&nbsp;=&nbsp;newNode;&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tail&nbsp;=&nbsp;newNode;&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">else</span><span>&nbsp;{&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//newNode&nbsp;will&nbsp;be&nbsp;added&nbsp;after&nbsp;tail&nbsp;such&nbsp;that&nbsp;tail's&nbsp;next&nbsp;will&nbsp;point&nbsp;to&nbsp;newNode</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tail-&gt;next&nbsp;=&nbsp;newNode;&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//newNode&nbsp;will&nbsp;become&nbsp;new&nbsp;tail&nbsp;of&nbsp;the&nbsp;list</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tail&nbsp;=&nbsp;newNode;&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li><li class="alt"><span>}&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;</span></li><li class="alt"><span><span class="comment">//display()&nbsp;will&nbsp;display&nbsp;all&nbsp;the&nbsp;nodes&nbsp;present&nbsp;in&nbsp;the&nbsp;list</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span><span class="keyword">void</span><span>&nbsp;display()&nbsp;{&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//Node&nbsp;current&nbsp;will&nbsp;point&nbsp;to&nbsp;head</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">struct</span><span>&nbsp;node&nbsp;*current&nbsp;=&nbsp;head;&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span><span>(head&nbsp;==&nbsp;NULL)&nbsp;{&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf(<span class="string">"List&nbsp;is&nbsp;empty\n"</span><span>);&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span><span>;&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;printf(<span class="string">"Nodes&nbsp;of&nbsp;singly&nbsp;linked&nbsp;list:&nbsp;\n"</span><span>);&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">while</span><span>(current&nbsp;!=&nbsp;NULL)&nbsp;{&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//Prints&nbsp;each&nbsp;node&nbsp;by&nbsp;incrementing&nbsp;pointer</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf(<span class="string">"%d&nbsp;"</span><span>,&nbsp;current-&gt;data);&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;current&nbsp;=&nbsp;current-&gt;next;&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;printf(<span class="string">"\n"</span><span>);&nbsp;&nbsp;</span></span></li><li class="alt"><span>}&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li><li class="alt"><span><span class="datatypes">int</span><span>&nbsp;main()&nbsp;&nbsp;</span></span></li><li class=""><span>{&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//Add&nbsp;nodes&nbsp;to&nbsp;the&nbsp;list</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;addNode(1);&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;addNode(2);&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;addNode(3);&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;addNode(4);&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//Displays&nbsp;the&nbsp;nodes&nbsp;present&nbsp;in&nbsp;the&nbsp;list</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;display();&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span><span>&nbsp;0;&nbsp;&nbsp;</span></span></li><li class="alt"><span>}&nbsp;&nbsp;</span></li></ol></div><textarea name="code" class="cpp" style="display: none;">#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+//Represent a node of singly linked list
+struct node{
+    int data;
+    struct node *next;
+};    
+ 
+//Represent the head and tail of the singly linked list
+struct node *head, *tail = NULL;
+ 
+//addNode() will add a new node to the list
+void addNode(int data) {
+    //Create a new node
+    struct node *newNode = (struct node*)malloc(sizeof(struct node));
+    newNode-&gt;data = data;
+    newNode-&gt;next = NULL;
+    
+    //Checks if the list is empty
+    if(head == NULL) {
+        //If list is empty, both head and tail will point to new node
+        head = newNode;
+        tail = newNode;
+    }
+    else {
+        //newNode will be added after tail such that tail's next will point to newNode
+        tail-&gt;next = newNode;
+        //newNode will become new tail of the list
+        tail = newNode;
+    }
+}
+ 
+//display() will display all the nodes present in the list
+void display() {
+    //Node current will point to head
+    struct node *current = head;
+    
+    if(head == NULL) {
+        printf("List is empty\n");
+        return;
+    }
+    printf("Nodes of singly linked list: \n");
+    while(current != NULL) {
+        //Prints each node by incrementing pointer
+        printf("%d ", current-&gt;data);
+        current = current-&gt;next;
+    }
+    printf("\n");
+}
+    
+int main()
+{
+    //Add nodes to the list
+    addNode(1);
+    addNode(2);
+    addNode(3);
+    addNode(4);
+    
+    //Displays the nodes present in the list
+    display();
+ 
+    return 0;
+}
+</textarea></div>
+
+<div id="bottomnextup">
+<a class="next" href="dbms-er-model-concept">next &rarr;</a>
+<a class="next" href="dbms-data-independence">&larr; prev</a>
+</div>
+
+
+<br/><br/>
+</td></tr>
+</table>
+    </div>
+
+</body>
+
+</html> 

@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>textarea</title>
+<style>
+.codeblock {
+    width: 100%;
+  
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+    margin-bottom: 8px;
+    font-family: verdana;
+    padding-left: 0;
+    border-left: 4px solid #6b5;
+    -moz-box-shadow: 6px 3px 8px #d4d4d4;
+    -webkit-box-shadow: 6px 3px 8px #d4d4d4;
+    box-shadow: 6px 3px 8px #d4d4d4;
+}
+.codeblock, .codeblock3 {
+    border: 1px solid #d5ddc6;
+}
+
+div {
+    display: block;
+}
+</style>
+</head>
+<body>
+<div class="codeblock"><div><div class="bar"><div class="tools"><a href="#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;"></a><a href="#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;"></a><a href="#" onclick="dp.sh.Toolbar.Command('About',this);return false;"></a></div></div><ol start="1" class="dp-cpp"><li class="alt"><span><span class="preprocessor">#include&nbsp;&lt;stdio.h&gt;</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span><span class="preprocessor">#include&nbsp;&lt;stdlib.h&gt;</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span><span class="comment">//Represent&nbsp;a&nbsp;node&nbsp;of&nbsp;singly&nbsp;linked&nbsp;list</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span><span class="keyword">struct</span><span>&nbsp;node{&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="datatypes">int</span><span>&nbsp;data;&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">struct</span><span>&nbsp;node&nbsp;*next;&nbsp;&nbsp;</span></span></li><li class="alt"><span>};&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;</span></li><li class="alt"><span><span class="comment">//Represent&nbsp;the&nbsp;head&nbsp;and&nbsp;tail&nbsp;of&nbsp;the&nbsp;singly&nbsp;linked&nbsp;list</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span><span class="keyword">struct</span><span>&nbsp;node&nbsp;*head,&nbsp;*tail&nbsp;=&nbsp;NULL;&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;</span></li><li class=""><span><span class="comment">//addNode()&nbsp;will&nbsp;add&nbsp;a&nbsp;new&nbsp;node&nbsp;to&nbsp;the&nbsp;list</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span><span class="keyword">void</span><span>&nbsp;addNode(</span><span class="datatypes">int</span><span>&nbsp;data)&nbsp;{&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//Create&nbsp;a&nbsp;new&nbsp;node</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">struct</span><span>&nbsp;node&nbsp;*newNode&nbsp;=&nbsp;(</span><span class="keyword">struct</span><span>&nbsp;node*)malloc(</span><span class="keyword">sizeof</span><span>(</span><span class="keyword">struct</span><span>&nbsp;node));&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;newNode-&gt;data&nbsp;=&nbsp;data;&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;newNode-&gt;next&nbsp;=&nbsp;NULL;&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//Checks&nbsp;if&nbsp;the&nbsp;list&nbsp;is&nbsp;empty</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span><span>(head&nbsp;==&nbsp;NULL)&nbsp;{&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//If&nbsp;list&nbsp;is&nbsp;empty,&nbsp;both&nbsp;head&nbsp;and&nbsp;tail&nbsp;will&nbsp;point&nbsp;to&nbsp;new&nbsp;node</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;head&nbsp;=&nbsp;newNode;&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tail&nbsp;=&nbsp;newNode;&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">else</span><span>&nbsp;{&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//newNode&nbsp;will&nbsp;be&nbsp;added&nbsp;after&nbsp;tail&nbsp;such&nbsp;that&nbsp;tail's&nbsp;next&nbsp;will&nbsp;point&nbsp;to&nbsp;newNode</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tail-&gt;next&nbsp;=&nbsp;newNode;&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//newNode&nbsp;will&nbsp;become&nbsp;new&nbsp;tail&nbsp;of&nbsp;the&nbsp;list</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tail&nbsp;=&nbsp;newNode;&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li><li class="alt"><span>}&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;</span></li><li class="alt"><span><span class="comment">//display()&nbsp;will&nbsp;display&nbsp;all&nbsp;the&nbsp;nodes&nbsp;present&nbsp;in&nbsp;the&nbsp;list</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span><span class="keyword">void</span><span>&nbsp;display()&nbsp;{&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//Node&nbsp;current&nbsp;will&nbsp;point&nbsp;to&nbsp;head</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">struct</span><span>&nbsp;node&nbsp;*current&nbsp;=&nbsp;head;&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span><span>(head&nbsp;==&nbsp;NULL)&nbsp;{&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf(<span class="string">"List&nbsp;is&nbsp;empty\n"</span><span>);&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span><span>;&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;printf(<span class="string">"Nodes&nbsp;of&nbsp;singly&nbsp;linked&nbsp;list:&nbsp;\n"</span><span>);&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">while</span><span>(current&nbsp;!=&nbsp;NULL)&nbsp;{&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//Prints&nbsp;each&nbsp;node&nbsp;by&nbsp;incrementing&nbsp;pointer</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf(<span class="string">"%d&nbsp;"</span><span>,&nbsp;current-&gt;data);&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;current&nbsp;=&nbsp;current-&gt;next;&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;printf(<span class="string">"\n"</span><span>);&nbsp;&nbsp;</span></span></li><li class="alt"><span>}&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li><li class="alt"><span><span class="datatypes">int</span><span>&nbsp;main()&nbsp;&nbsp;</span></span></li><li class=""><span>{&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//Add&nbsp;nodes&nbsp;to&nbsp;the&nbsp;list</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;addNode(1);&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;addNode(2);&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;addNode(3);&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;addNode(4);&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//Displays&nbsp;the&nbsp;nodes&nbsp;present&nbsp;in&nbsp;the&nbsp;list</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;display();&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span><span>&nbsp;0;&nbsp;&nbsp;</span></span></li><li class="alt"><span>}&nbsp;&nbsp;</span></li></ol></div><textarea name="code" class="cpp" style="display: none;">#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+//Represent a node of singly linked list
+struct node{
+    int data;
+    struct node *next;
+};    
+ 
+//Represent the head and tail of the singly linked list
+struct node *head, *tail = NULL;
+ 
+//addNode() will add a new node to the list
+void addNode(int data) {
+    //Create a new node
+    struct node *newNode = (struct node*)malloc(sizeof(struct node));
+    newNode-&gt;data = data;
+    newNode-&gt;next = NULL;
+    
+    //Checks if the list is empty
+    if(head == NULL) {
+        //If list is empty, both head and tail will point to new node
+        head = newNode;
+        tail = newNode;
+    }
+    else {
+        //newNode will be added after tail such that tail's next will point to newNode
+        tail-&gt;next = newNode;
+        //newNode will become new tail of the list
+        tail = newNode;
+    }
+}
+ 
+//display() will display all the nodes present in the list
+void display() {
+    //Node current will point to head
+    struct node *current = head;
+    
+    if(head == NULL) {
+        printf("List is empty\n");
+        return;
+    }
+    printf("Nodes of singly linked list: \n");
+    while(current != NULL) {
+        //Prints each node by incrementing pointer
+        printf("%d ", current-&gt;data);
+        current = current-&gt;next;
+    }
+    printf("\n");
+}
+    
+int main()
+{
+    //Add nodes to the list
+    addNode(1);
+    addNode(2);
+    addNode(3);
+    addNode(4);
+    
+    //Displays the nodes present in the list
+    display();
+ 
+    return 0;
+}
+</textarea></div>
+<script>
+</script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>block-box</title>
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="jquery-3.4.1.min.js"></script>
+
+<style>
+
+*{
+	margin:0;
+
+}
+body{
+	font-family:'Livvic',sans-serif;
+	display:flex;
+	
+	
+	height:100vh;
+	width:100vh;
+	background-color:#f7f7f7;
+	color:#606060;
+}
+.row{
+	margin:0;
+
+	align-items: center;
+	width:900px;
+	display:flex;
+	
+
+}
+.col-3{
+	width:33.33%;
+	padding-left:0 15px;
+	float:left;
+	position: center;
+
+	box-sizing: border-box;
+}
+.box:hover{
+	box-shadow:0 0 10px rgba(0,0,0, .4);
+
+}
+.box
+{
+	transition:1.2s;
+}
+.box:hover .info{
+	max-height:400px;
+}
+.info{
+	max-height:0px;
+	transition:1.2s;
+	overflow:hidden;
+}
+.info-inner{
+	padding:25px;
+	background:#fff;
+}
+.info h4{
+	font-size:20px;
+	margin-bottom:10px;
+}
+.info i{
+	margin-bottom:5px;
+	display:inline-block;
+	font-size:13px;
+}
+button{
+	color:#fff;
+	width:100%;
+	padding:15px;
+	border:none;
+	background:#60666b;
+	cursor:pointer;
+	font-size:15px;
+}
+</style>
+</head>
+<body>
+	<div class="row">
+		<div class="col-3">
+			<div class="box">
+				<div class="info">
+					<div class="info-inner">
+
+						<h4>2016-2019</h4>
+						<i>CEO</i>
+						<p>In a RGB color space, hex #8a795d (also known as Shadow) is composed of 54.1% red, 47.5% green and 36.5% blue. Whereas in a CMYK color space, it is composed of 0% cyan, 12.3% magenta, 32.6% yellow and 45.9% black. It has a hue angle of 37.3 degrees, a saturation of 19.5% and a lightness of 45.3%.</p>
+					</div>
+				</div>
+				<button>Web Technology</button>
+			</div>
+
+		</div>
+		<div class="col-3">
+			<div class="box">
+				<div class="info">
+					<div class="info-inner">
+
+						<h4>2016-2019</h4>
+						<i>CEO</i>
+						<p>In a RGB color space, hex #8a795d (also known as Shadow) is composed of 54.1% red, 47.5% green and 36.5% blue. Whereas in a CMYK color space, it is composed of 0% cyan, 12.3% magenta, 32.6% yellow and 45.9% black. It has a hue angle of 37.3 degrees, a saturation of 19.5% and a lightness of 45.3%.</p>
+					</div>
+				</div>
+				<button>Web Technology	</button>
+			</div>
+			
+		</div>
+		<div class="col-3">
+			<div class="box">
+				<div class="info">
+					<div class="info-inner">
+
+						<h4>2016-2019</h4>
+						<i>CEO</i>
+						<p>In a RGB color space, hex #8a795d (also known as Shadow) is composed of 54.1% red, 47.5% green and 36.5% blue. Whereas in a CMYK color space, it is composed of 0% cyan, 12.3% magenta, 32.6% yellow and 45.9% black. It has a hue angle of 37.3 degrees, a saturation of 19.5% and a lightness of 45.3%.</p>
+					</div>
+				</div>
+				<button>Click</button>
+			</div>
+			
+		</div>
+	</div>
+
+</body>
+</html>
